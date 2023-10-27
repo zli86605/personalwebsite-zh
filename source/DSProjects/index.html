@@ -1,0 +1,207 @@
+<style>
+    .projects-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 0;
+    }
+
+    .projects-table td {
+        border: 0;
+        vertical-align: middle;
+    }
+
+    .projects-table img {
+        max-width: 100px;
+        height: 100px;
+    }
+
+    .projects-table .paper p {
+        text-align: left;
+        margin: 0;
+    }
+
+    #techstack {
+        font-size: 0.9em;
+    }
+
+    .projects-table .paper {
+        position: relative;
+        /* 设置为相对定位，以便背景图片正确放置 */
+    }
+
+    .project-entry {
+        position: relative;
+        /* 使我们能够相对于此容器定位背景图片 */
+        margin-bottom: 20px;
+        /* 可选：根据需要增加一些间距 */
+    }
+
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* width: 200px;
+        height: 200px; */
+        z-index: -1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.1;
+        /* 根据需要调整透明度 */
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        opacity: 0.3;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+
+    .background-image {
+        /* 其他样式保持不变 */
+        background-size: contain;
+        /* 确保图片完整显示 */
+        background-repeat: no-repeat;
+        /* 防止图片重复 */
+        background-position: center;
+        /* 将图片居中在容器内 */
+        opacity: 0.075;
+        /* 根据需要调整透明度 */
+        
+    }
+</style>
+<div class="project-entry">
+    <div class="background-image" style="background-image: url('/img/DS551_Club.png');"></div>
+    <table class="projects-table" style="width:100%; border-collapse: collapse;">
+        <tr>
+            <td class="paper">
+                <papertitle><b>Social Media Platform for USC Recreational Sports Club.</b>
+                </papertitle>
+                <p id="techstack"><b>Key Technologies: </b><i>MongoDB, pymongo, Flask web, Firebase, RESTful API, SocketIO, HTML/CSS</i></p>
+                2022
+                <p><a href="https://youtu.be/8xx2ZGchPjQ" style="color:blue;">Video Introduction</a> | Code Details (<a href="https://github.com/zli86605/onlineorder-Frontend" style="color:blue;">frontend</a> / <a href="https://github.com/zli86605/onlineorder-backend" style="color:blue;">backend</a>)</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="paper" colspan="2">
+                <p>
+                    <li>Curated and stored USC Recreational Sports Club Instagram posts in MongoDB with pymongo.</li>
+                    <li>Built Flask web app emulating Firebase, enabling RESTful API actions via command URLs.</li>
+                    <li>Enhanced user engagement with real-time post and comment interactions using SocketIO.</li>
+                    <li>UCrafted responsive UI with HTML/CSS for key pages (Home, Account, Post Detail).</li>
+                    <li>Empowered users for dynamic social interaction: create, view, update, delete posts, and manage comments.</li>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+<hr>
+<div class="project-entry">
+    <div class="background-image" style="background-image: url('/img/DS_HW2.png');"></div>
+    <table class="projects-table" style="width:100%; border-collapse: collapse;">
+        <tr>
+            <td class="paper">
+                <papertitle><b>Analysis and Prediction of Energy Output from Ambient Variables in a Power Plant.</b>
+                </papertitle>
+                <p id="techstack"><b>Key Technologies: </b><i>Python, Scikit-learn, linear regression, polynomial regression models, k-nearest neighbor (KNN) regression</i></p>
+                2022<br>
+                
+                <p><a href="https://youtu.be/jf96auzAIBA" style="color:blue;">Video Introduction</a>  | Code Details (<a href="https://github.com/zli86605/Around-Frontend" style="color:blue;">frontend</a> / <a href="https://github.com/zli86605/Around-Backend" style="color:blue;">backend</a>)</p>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td class="paper" colspan="2">
+                <p>
+                    <li>Utilized Python and Scikit-learn to process and analyze a six-year dataset from a Combined Cycle Power Plant, emphasizing hourly ambient variables. </li>
+                    <li>Applied linear regression techniques, both simple and multiple, to identify statistically significant predictors of energy output.</li>
+                    <li>Explored nonlinear dynamics using polynomial regression models, and enhanced model robustness by integrating quadratic nonlinearities and interaction terms.</li>
+                    <li>Implemented and tuned k-nearest neighbor (KNN) regression using raw and normalized features, determining optimal 'k' values and assessing model performance.</li>
+                    <li>Conducted a comparative evaluation of KNN Regression and linear regression models, drawing insights on prediction accuracy and model efficacy.</li>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+<hr>
+<div class="project-entry">
+    <div class="background-image" style="background-image: url('/img/DS_HW3.png');"></div>
+    <table class="projects-table" style="width:100%; border-collapse: collapse;">
+        <tr>
+            <td class="paper">
+                <papertitle><b>Time Series Classification for Human Activity Recognition</b>
+                </papertitle>
+                <p id="techstack"><b>Key Technologies: </b><i>time series data, logistic regression, L1-penalized logistic regression, multi-class classification</i></p>
+                2022
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td class="paper" colspan="2">
+                <p>
+                    <li>Leveraged time series data from a Wireless Sensor Network to classify human activities, using datasets from the AReM repository, encompassing seven diverse activity types.</li>
+                    <li>Conducted feature extraction from the time series data, researching and implementing time-domain features like minimum, maximum, mean, median, standard deviation, and quartiles.</li>
+                    <li>Utilized logistic regression for binary classification, applying techniques like recursive feature elimination and assessing model performance through scatter plots, confusion matrices, ROC curves, and AUC metrics.</li>
+                    <li>Enhanced model robustness by implementing L1-penalized logistic regression, optimizing for both time series split parameter (l) and regularization weight (λ), and comparing against traditional variable selection using p-values.</li>
+                    <li>Executed multi-class classification using L1-penalized multinomial regression and Naïve Bayes classifiers (with Gaussian and Multinomial priors), evaluating and contrasting their performance for comprehensive activity classification. </li>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+<hr>
+<div class="project-entry">
+    <div class="background-image" style="background-image: url('/img/DS_HW6.png');"></div>
+    <table class="projects-table" style="width:100%; border-collapse: collapse;">
+        <tr>
+            <td class="paper">
+                <papertitle><b>Tree-Based Methods for Time Series Classification and Fault Detection.</b>
+                </papertitle>
+                <p id="techstack"><b>Key Technologies: </b><i>data imputation techniques, random forests, confusion matrix, ROC, AUC, L1-penalized logistic regression, XGBoost, SMOTE</i></p>
+                2022
+                <p><a href="https://github.com/zli86605/Starlink" style="color:blue;">Code Details </a></p>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td class="paper" colspan="2">
+                <p>
+                    <li>Address the APS Failure dataset that contains missing values. Investigate data imputation techniques and select at least one method to apply on the dataset.</li>
+                    <li>Directly classify the dataset using random forests without compensating for class imbalance. Calculate and report the confusion matrix, ROC, AUC, and misclassification rates for training and test sets.</li>
+                    <li>Research how class imbalance is tackled in random forests. After compensating the data, redo the classification step with random forests and compare the results with the uncompensated approach.</li>
+                    <li>Implement L1-penalized logistic regression at each node and utilize XGBoost for model tree fitting. Use cross-validation to determine the regularization term and train the model for the APS dataset.</li>
+                    <li>Pre-process the data using the SMOTE (Synthetic Minority Over-sampling Technique) to address class imbalance. Train the XGBoost model again and compare the results with the non-compensated scenario.</li>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+<hr>
+<hr>
+<div class="project-entry">
+    <div class="background-image" style="background-image: url('/img/DS_HW7.png');"></div>
+    <table class="projects-table" style="width:100%; border-collapse: collapse;">
+        <tr>
+            <td class="paper">
+                <papertitle><b>Multi-Class and Multi-Label Classification Using Support Vector Machines and K-Means Clustering.</b>
+                </papertitle>
+                <p id="techstack"><b>Key Technologies: </b><i>Anuran Calls (MFCCs), Gaussian kernels, hamming score/loss, L1-penalized SVMs, cross-validation, k-means clustering, Hamming distance</i></p>
+                2022
+                <p><a href="https://github.com/zli86605/Starlink" style="color:blue;">Code Details </a></p>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td class="paper" colspan="2">
+                <p>
+                    <li>Download the Anuran Calls (MFCCs) Data Set and allocate 70% for training.</li>
+                    <li>Train separate SVMs for each label (Families, Genus, Species) with Gaussian kernels. Evaluate using exact match and hamming score/loss.</li>
+                    <li>Implement L1-penalized SVMs with standardized attributes and determine SVM penalty using cross-validation.</li>
+                    <li>Apply SMOTE or a similar method to address class imbalance and evaluate the classifiers.</li>
+                    <li>Implement k-means clustering on the full dataset, determine majority labels for each cluster, and compute the Hamming distance, score, and loss.</li>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+<hr>

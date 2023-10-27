@@ -1,0 +1,180 @@
+<style>
+    .projects-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 0;
+    }
+
+    .projects-table td {
+        border: 0;
+        vertical-align: middle;
+    }
+
+    .projects-table img {
+        max-width: 100px;
+        height: 100px;
+    }
+
+    .projects-table .paper p {
+        text-align: left;
+        margin: 0;
+    }
+
+    #techstack {
+        font-size: 0.9em;
+    }
+
+    .projects-table .paper {
+        position: relative;
+        /* 设置为相对定位，以便背景图片正确放置 */
+    }
+
+    .project-entry {
+        position: relative;
+        /* 使我们能够相对于此容器定位背景图片 */
+        margin-bottom: 20px;
+        /* 可选：根据需要增加一些间距 */
+    }
+
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* width: 200px;
+        height: 200px; */
+        z-index: -1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.1;
+        /* 根据需要调整透明度 */
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        opacity: 0.3;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+
+    .background-image {
+        /* 其他样式保持不变 */
+        background-size: contain;
+        /* 确保图片完整显示 */
+        background-repeat: no-repeat;
+        /* 防止图片重复 */
+        background-position: center;
+        /* 将图片居中在容器内 */
+        opacity: 0.075;
+        /* 根据需要调整透明度 */
+        
+    }
+</style>
+<div class="project-entry">
+    <div class="background-image" style="background-image: url('/img/OnlineOrder.png');"></div>
+    <table class="projects-table" style="width:100%; border-collapse: collapse;">
+        <tr>
+            <td class="paper">
+                <papertitle><b>OnlineOrder: A Spring and Hibernate based online food ordering system.</b>
+                </papertitle>
+                <p id="techstack"><i>Rest API, Spring MVC, Hibernate, Spring security, ReactJS, Ant Design, </i></p>
+                2022
+                <p><a href="https://youtu.be/SY1kY_mvOyI" style="color:blue;">Video Introduction</a> | Code Details (<a href="https://github.com/zli86605/onlineorder-Frontend" style="color:blue;">frontend</a> / <a href="https://github.com/zli86605/onlineorder-backend" style="color:blue;">backend</a>)</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="paper" colspan="2">
+                <p>
+                    <li>Implemented Rest API via Spring MVC including registration, menu searching , ordering, and checkout.</li>
+                    <li>Utilized Hibernate to access and operate the data storage(menu, restaurants etc.).</li>
+                    <li>Provided both authentication and authorization via Spring security to protect the application from malicious attacks.</li>
+                    <li>Used the Spring framework core technologies to loosely decouple all the components in the application.</li>
+                    <li>Build the client side with ReactJS and Ant Design to allow users to add items to the shopping cart and place orders.</li>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+<hr>
+<div class="project-entry">
+    <div class="background-image" style="background-image: url('/img/Around.png');"></div>
+    <table class="projects-table" style="width:100%; border-collapse: collapse;">
+        <tr>
+            <td class="paper">
+                <papertitle><b>Around: a Cloud and React based Social Network</b>
+                </papertitle>
+                <p id="techstack"><i>React Router v4, JWT, Go, Google App Engine, Elasticsearch</i></p>
+                2022<br>
+                
+                <p><a href="https://youtu.be/jf96auzAIBA" style="color:blue;">Video Introduction</a>  | Code Details (<a href="https://github.com/zli86605/Around-Frontend" style="color:blue;">frontend</a> / <a href="https://github.com/zli86605/Around-Backend" style="color:blue;">backend</a>)</p>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td class="paper" colspan="2">
+                <p>
+                    <i>Frontend</i>
+                    <li>Designed and implemented a social network web application with React JS. </li>
+                    <li>Implemented features for users to create and browse posts and support search nearby posts.</li>
+                    <li>Improved the authentication using token based registration/login/logout flow with React Router v4 and server-side user authentication with JWT.</li>
+                    <i>BackEnd</i>
+                    <li>Launched a scalable web service in Go to handle posts and deployed to Google Cloud (Google App Engine).</li>
+                    <li>Used ElasticSearch (deployed to GCE) to provide search functions such that users can search recent posts and list personal posts.</li>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+<hr>
+<div class="project-entry">
+    <div class="background-image" style="background-image: url('/img/Tinnews.png');"></div>
+    <table class="projects-table" style="width:100%; border-collapse: collapse;">
+        <tr>
+            <td class="paper">
+                <papertitle><b>Tinnews: a Tinder-like News Recommendation App</b>
+                </papertitle>
+                <p id="techstack"><i>Google Component Architectural MVVM Pattern, JetPack navigation component, RESTFUL, Mindorks’s PlaceHolderView, Retrofit, Rxjava, newsapi.org</i></p>
+                2022
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td class="paper" colspan="2">
+                <p>
+                    <li>Designed the Instagram Flavor News app based on Google Component Architectural MVVM Pattern</li>
+                    <li>Implemented the bottom bar & page navigation using JetPack navigation component.</li>
+                    <li>Utilized Mindorks’s PlaceHolderView to support swipe gestures for liking/disliking the news.</li>
+                    <li>Built the Room Database with LiveData & ViewModel to support local cache and offline model.</li>
+                    <li>Integrated Retrofit and Rxjava to pull the latest news data from a RESTFUL endpoint (newsapi.org). </li>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+<hr>
+<div class="project-entry">
+    <div class="background-image" style="background-image: url('/img/StarLink.png');"></div>
+    <table class="projects-table" style="width:100%; border-collapse: collapse;">
+        <tr>
+            <td class="paper">
+                <papertitle><b>Starlink: React JS based Starlink Trajectory Visualization</b>
+                </papertitle>
+                <p id="techstack"><i>ReactJS, D3, Amazon Web Service</i></p>
+                2022
+                <p><a href="https://github.com/zli86605/Starlink" style="color:blue;">Code Details </a></p>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td class="paper" colspan="2">
+                <p>
+                    <li>Designed and developed a visualization dashboard using ReactJS and D3 to track satellites in real-time based on geo-location.</li>
+                    <li>Built location, altitude, and duration based selector to refine satellite search.</li>
+                    <li>Animated selected satellite paths on a world map using D3 to improve the user-friendliness.</li>
+                    <li>Deployed the dashboard to Amazon Web Service for demonstration</li>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+<hr>

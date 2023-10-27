@@ -1,9 +1,10 @@
-favicon: /img/cloud_ai.png
+#favicon: /img/cloud_ai.png
 # Change to your profile picture
-avatar: /img/profile_v1.jpg
+avatar: /img/profie.jpg
 # if author sets in hexo_config, this string doesn't work
-author: 'Yuangang Li'
-author_bio: 'I am a Mater Student in Computer Science at the University of Southern California. My research interests include Cloud Computing, Machine Learning, and Distributed Systems.'
+author: 'Zeyu Li'
+author_bio: 'I am a Mater Student in Spatial Data Science at the University of Southern California. My under graduate major is Software Engineering. I have solid software engineer with exceptional programming, analytical and mathematical skills. High
+proficiency in Android and iOS mobile development, and web development using Java, Go, React, Spring, Hibernate, Vue, MongoDB and Firebase. '
 
 since: 2023
 
@@ -12,11 +13,10 @@ since: 2023
 # 可以选择外链或其他页面
 menu:
   Readme: /Readme/
-  Projects: /Projects/
-  Publications: /#Publications
-  About: /
-  Blog: https://phower.me
-
+  # Work Experience: /Experience/
+  Computer Science Projects: /Projects/
+  Data Science Projects: /DSProjects/
+  Spcial Data Science: /SSCI/
 # flink picture will load if avator link calls on error
 loading_bg:
   flink: /img/cloud_ai.png
@@ -29,9 +29,9 @@ social:
 social_links:
   # fab fa-twitter: /
   # fab fa-facebook-square: /
-  fab fa-github: https://github.com/MrLYG
+  fab fa-github: https://github.com/zli86605/
   # fab fa-stack-overflow: /
-  fab fa-linkedin: https://www.linkedin.com/in/yuangang-li/
+  fab fa-linkedin: https://www.linkedin.com/in/catherinezy-li/
   # fab fa-weibo: /
   fab fa-weixin: /
   fab fa-qq: /
@@ -49,8 +49,8 @@ e_social_links:
 # CV download link
 cv_dl:
   enable: true
-  dir: /attaches/CV.pdf
-  description: My Detail CV.
+  dir: /attaches/Resume(V14.7).pdf
+  description: My Resume.
 
 # Box-shadow
 # display box-shadow on page or not

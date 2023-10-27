@@ -1,0 +1,151 @@
+<style>
+    .projects-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 0;
+    }
+
+    .projects-table td {
+        border: 0;
+        vertical-align: middle;
+    }
+
+    .projects-table img {
+        max-width: 100px;
+        height: 100px;
+    }
+
+    .projects-table .paper p {
+        text-align: left;
+        margin: 0;
+    }
+
+    #techstack {
+        font-size: 0.9em;
+    }
+
+    .projects-table .paper {
+        position: relative;
+        /* 设置为相对定位，以便背景图片正确放置 */
+    }
+
+    .project-entry {
+        position: relative;
+        /* 使我们能够相对于此容器定位背景图片 */
+        margin-bottom: 20px;
+        /* 可选：根据需要增加一些间距 */
+    }
+
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* width: 200px;
+        height: 200px; */
+        z-index: -1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.1;
+        /* 根据需要调整透明度 */
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        opacity: 0.3;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+
+    .background-image {
+        /* 其他样式保持不变 */
+        background-size: contain;
+        /* 确保图片完整显示 */
+        background-repeat: no-repeat;
+        /* 防止图片重复 */
+        background-position: center;
+        /* 将图片居中在容器内 */
+        opacity: 0.075;
+        /* 根据需要调整透明度 */
+        
+    }
+</style>
+<div class="project-entry">
+    <div class="background-image" style="background-image: url('/img/SSCI575_P2.png');"></div>
+    <table class="projects-table" style="width:100%; border-collapse: collapse;">
+        <tr>
+            <td class="paper">
+                <papertitle><b>Spatial Analysis of House Prices in King County, WA</b>
+                </papertitle>
+                <p id="techstack"><b>Key Technologies: </b><i>data visualization, Generalized Linear Regression (GLR), Geographically Weighted Regression (GWR), Forest-Based Classification and Regression, neural network models</i></p>
+                2023
+                <p><a href="https://drive.google.com/file/d/1L67YYuAtgCVzU1aGHcp9Vfnn8eZc0mc8/view?usp=sharing" style="color:blue;">Project Details</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td class="paper" colspan="2">
+                <p>
+                    <li>Mapped housing prices in King County, WA, utilizing local spatial summary metrics to highlight key spatial patterns and relationships.</li>
+                    <li>Conducted data visualization to present relationships between house prices and influential variables, providing insights into primary price drivers.</li>
+                    <li>Employed Generalized Linear Regression (GLR) and Geographically Weighted Regression (GWR) models, comparing their effectiveness through regression diagnostics.</li>
+                    <li>Utilized Forest-Based Classification and Regression tools and neural network models via scikit-learn's MLPRegressor, optimizing predictive accuracy through various topologies and learning rates.</li>
+                    <li>Critically assessed and compared all regression models, drawing conclusions on their insights into the King County housing market dynamics.</li>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+<hr>
+<div class="project-entry">
+    <div class="background-image" style="background-image: url('/img/StoryMap.png');"></div>
+    <table class="projects-table" style="width:100%; border-collapse: collapse;">
+        <tr>
+            <td class="paper">
+                <papertitle><b>Diabetes and Health-Related Factors Analysis</b>
+                </papertitle>
+                <p id="techstack"><b>Key Technologies: </b><i>Python, SQL, Machine Learning, ArcGIS Online, JavaScript API, Pandas, NumPy, Web AppBuilder</i></p>
+                2023<br>
+                
+                <p><a href="https://storymaps.arcgis.com/stories/165118989af342f79fc5fa3d124aa142" style="color:blue;">StoryMap Details</a></p>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td class="paper" colspan="2">
+                <p>
+                    <li>Analyzed the prevalence and distribution of diabetes across different regions using Python and SQL for data processing </li>
+                    <li>Investigated the correlation between health-related factors and the onset of diabetes, leveraging Machine Learning algorithms in Python.</li>
+                    <li>Utilized ArcGIS tools and JavaScript API to visualize and interpret complex health data.</li>
+                    <li>Collaborated with a team to gather, clean, and process relevant health datasets using Pandas and NumPy.</li>
+                    <li>Developed an interactive story map with ArcGIS Online and integrated it with Web AppBuilder to communicate findings and insights to a broader audience.</li>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+<hr>
+<div class="project-entry">
+    <div class="background-image" style="background-image: url('/img/Python.png');"></div>
+    <table class="projects-table" style="width:100%; border-collapse: collapse;">
+        <tr>
+            <td class="paper">
+                <papertitle><b>Introduction to Programming Spatial Data Analysis in Python</b>
+                </papertitle>
+                <p id="techstack"><b>Key Technologies: </b><i>Python libraries, Jupyter Project tools, GeoPandas, Anaconda-Navigator, earthpy, GeoPandas</i></p>
+                2022
+                <p><a href="https://drive.google.com/file/d/1X06woo0sKb-vF3xC4N4vrq4_SyKOAMSV/view?usp=sharing" style="color:blue;">Project Details</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td class="paper" colspan="2">
+                <p>
+                    <li>Utilized open-source Python libraries and Jupyter Project tools to conduct spatial analysis, focusing on the study areas of Antwerpen, Belgium, and Berlin, Germany.</li>
+                    <li>Employed GeoPandas to manipulate spatial data, reproject layers, and calculate minimum distances between green urban areas and buildings.</li>
+                    <li>Set up the environment using Anaconda-Navigator and integrated essential packages like earthpy and GeoPandas.</li>
+                    <li>Analyzed and visualized land use, street lines, and building data for both study areas, effectively reprojecting coordinate systems and calculating distances between buildings and green areas.</li>
+                    <li>Interpreted results, highlighting the significance of dataset selection and the impact of local conditions on spatial analysis outcomes. </li>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
