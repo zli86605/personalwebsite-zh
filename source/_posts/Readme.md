@@ -35,7 +35,7 @@ tags:
 
 - **AI Roboto Edu, Los Angeles, CA**  
   *Data Analyst & Frontend Engineer Intern*  
-  Jan 2023 - Jul 2023  
+  Jan 2023 - Jun 2023  
   - Implemented a course learning system using Vue.js, CSS, and JavaScript.  
   - Launched a user-friendly search interface, boosting content discovery rates by 37%.  
   - Conducted A/B testing on different interface designs, increasing session duration by 15%.  
@@ -67,7 +67,7 @@ tags:
 ## Let’s Connect! 🌐
 I am always open to connecting with fellow professionals. Here’s where you can find me:
 
-- **Email:** [zli86605@usc.edu](mailto:zli86605@usc.edu)
+- **Email:** [zli86605@usc.edu](mailto:zli86605@usc.edu) | [Catherine41313@gmail.com](Catherine41313@gmail.com) 
 - **LinkedIn:** [Catherine Zeyu Li](https://linkedin.com/in/catherinezy-li)
 - **GitHub:** [zli86605](https://github.com/zli86605)
 
